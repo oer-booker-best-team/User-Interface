@@ -1,3 +1,24 @@
+.links {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: #3C414D;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid black;
+}
+nav a:hover {
+  cursor: pointer;
+}
+nav a:first-child {
+  border-bottom: none;
+}
 * {
   box-sizing: border-box;
 }
