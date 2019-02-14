@@ -6,6 +6,16 @@ nav {
   flex-direction: column;
   text-align: center;
 }
+@media (min-width: 800px) {
+  nav {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  nav {
+    justify-content: flex-end;
+  }
+}
 nav a {
   text-decoration: none;
   color: #3C414D;
@@ -16,6 +26,16 @@ nav a {
 nav a:hover {
   cursor: pointer;
 }
+@media (min-width: 800px) {
+  nav a {
+    border: none;
+  }
+}
+@media (min-width: 1000px) {
+  nav a {
+    width: 20%;
+  }
+}
 nav a:first-child {
   border-bottom: none;
 }
@@ -25,6 +45,11 @@ nav a:first-child {
 }
 .books-img {
   width: 100%;
+}
+@media (min-width: 1000px) {
+  .books-img {
+    height: 300px;
+  }
 }
 .features {
   display: flex;

@@ -3,16 +3,33 @@ nav {
     flex-direction: column;
     text-align: center;
 
+    @media @tablet {
+        flex-direction: row;
+    }
+
+    @media @desktop {
+        justify-content: flex-end;
+    }
+
     a {
         .links();
         color: @site-color;
         padding: 20px;
         width: 100%;
         border: 1px solid black;
-
+       
         &:hover{
             cursor: pointer;
         }
+
+        @media @tablet {
+            border: none;
+        }
+
+        @media @desktop {
+            width: 20%;
+        }
+
     }
     a:first-child {
         border-bottom: none;
@@ -27,6 +44,10 @@ nav {
 
 .books-img {
     width: 100%;
+
+    @media @desktop {
+        height: 300px;
+    }
 }
 
 .features{
