@@ -1,3 +1,11 @@
+ html{
+    background: url('../img/bookcase.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -31,8 +39,11 @@ nav {
         }
 
     }
-    a:first-child {
-        border-bottom: none;
+
+    a:nth-child(2) {
+        @media @mobile {
+            display: none;
+        }
     }
 }
 

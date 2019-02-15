@@ -1,12 +1,19 @@
 .links {
   text-decoration: none;
 }
+html {
+  background: url('../img/bookcase.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 nav {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   nav {
     flex-direction: row;
   }
@@ -26,7 +33,7 @@ nav a {
 nav a:hover {
   cursor: pointer;
 }
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   nav a {
     border: none;
   }
@@ -36,8 +43,10 @@ nav a:hover {
     width: 20%;
   }
 }
-nav a:first-child {
-  border-bottom: none;
+@media (max-width: 500px) {
+  nav a:nth-child(2) {
+    display: none;
+  }
 }
 .main {
   margin: 0 auto;
