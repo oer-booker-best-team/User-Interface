@@ -1,19 +1,29 @@
 .links {
   text-decoration: none;
 }
-html {
-  background: url('../img/bookcase.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+.bg-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bookcase.jpg');
   background-size: cover;
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+body {
+  text-align: center;
 }
 nav {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 551px) {
   nav {
     flex-direction: row;
   }
@@ -33,7 +43,7 @@ nav a {
 nav a:hover {
   cursor: pointer;
 }
-@media (min-width: 600px) {
+@media (min-width: 551px) {
   nav a {
     border: none;
   }
@@ -43,7 +53,7 @@ nav a:hover {
     width: 20%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   nav a:nth-child(2) {
     display: none;
   }
