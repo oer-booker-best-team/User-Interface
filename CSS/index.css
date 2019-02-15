@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Old Standard TT Regular'), local('OldStandardTT-Regular'), url(https://fonts.gstatic.com/s/oldstandardtt/v11/MwQubh3o1vLImiwAVvYawgcf2eVeqlq9.ttf) format('truetype');
+}
 .links {
   text-decoration: none;
+}
+html {
+  font-family: Old Standard TT;
 }
 .bg-img::after {
   content: "";
@@ -35,7 +44,7 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: #3C414D;
+  color: #045D75;
   padding: 20px;
   width: 100%;
   border: 1px solid black;
