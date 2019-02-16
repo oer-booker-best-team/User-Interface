@@ -6447,8 +6447,29 @@
 .links {
   text-decoration: none;
 }
+.text-shadow {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 html {
   font-family: Old Standard TT;
+  font-size: 62.5%;
+  text-align: center;
+}
+/* FONT SIZES */
+h2 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h3 {
+  font-size: 1.9rem;
+}
+p {
+  font-size: 1.6rem;
+}
+ul,
+ol {
+  font-size: 1.6rem;
 }
 /* BACKGROUND IMAGE */
 .bg-img {
@@ -6461,12 +6482,10 @@ html {
   background-size: cover;
   opacity: 0.75;
 }
-body {
-  text-align: center;
-}
 nav {
   display: flex;
   flex-direction: column;
+  font-size: 2.7rem;
 }
 @media (min-width: 551px) {
   nav {
@@ -6480,10 +6499,11 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: #045D75;
+  background-color: #045D75;
+  color: white;
+  border-radius: 10px;
   padding: 20px;
   width: 100%;
-  border: 1px solid black;
 }
 nav a:hover {
   cursor: pointer;
@@ -6526,14 +6546,19 @@ nav a:hover {
   margin: 0;
   padding: 10px;
   border-radius: 7px;
+  opacity: 0.9;
 }
 .team .team-member .team-icons {
   background-color: #730200;
   border-radius: 7px;
   margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.9;
 }
 .team .team-member .team-icons a {
   color: white;
+  font-size: 1.6rem;
 }
 * {
   box-sizing: border-box;
