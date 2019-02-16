@@ -6582,6 +6582,13 @@ body {
   color: white;
   font-size: 1.6rem;
 }
+footer {
+  background-color: #045D75;
+  color: white;
+  opacity: 0.9;
+  margin: 0;
+  padding: 12px;
+}
 * {
   box-sizing: border-box;
 }
