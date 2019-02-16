@@ -6467,9 +6467,7 @@ h2 {
 h3 {
   font-size: 1.9rem;
 }
-p {
-  font-size: 1.6rem;
-}
+p,
 ul,
 ol {
   font-size: 1.6rem;
@@ -6511,17 +6509,17 @@ nav a {
 nav a:hover {
   cursor: pointer;
 }
-@media (min-width: 551px) {
-  nav a {
-    border: none;
-  }
-}
 @media (min-width: 1000px) {
   nav a {
     width: 20%;
   }
 }
 @media (max-width: 550px) {
+  nav a:nth-child(2) {
+    display: none;
+  }
+}
+@media (min-width: 551px) {
   nav a:nth-child(2) {
     display: none;
   }
@@ -6540,9 +6538,20 @@ body {
 .features {
   list-style-type: none;
 }
+@media (min-width: 551px) {
+  .features {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .features .features-list {
   margin: 0;
   padding: 0;
+}
+@media (min-width: 551px) {
+  .features .features-list {
+    width: 49%;
+  }
 }
 .features .features-list li {
   list-style-type: none;
