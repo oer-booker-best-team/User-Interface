@@ -6476,6 +6476,7 @@ ol {
 .bg-img {
   background-image: url('../img/bookcase.jpg');
   height: 100%;
+  width: 100vw;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -6562,8 +6563,20 @@ body {
   opacity: 0.9;
   border-radius: 7px;
 }
+@media (min-width: 551px) {
+  .team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 .team .team-member {
   margin-top: 20px;
+}
+@media (min-width: 551px) {
+  .team .team-member {
+    width: 49%;
+  }
 }
 .team .team-member img {
   border-radius: 7px;
