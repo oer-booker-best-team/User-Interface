@@ -6447,8 +6447,11 @@
 .links {
   text-decoration: none;
 }
-.text-shadow {
+.text-shadow-black {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.text-shadow-white {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 html {
   font-family: Old Standard TT;
@@ -6523,13 +6526,32 @@ nav a:hover {
     display: none;
   }
 }
-.main {
+body {
   margin: 0 auto;
   width: 98%;
 }
+.about {
+  background-color: white;
+  opacity: 0.9;
+  padding: 10px;
+  color: #730200;
+  border-radius: 7px;
+}
 .features {
-  display: flex;
-  justify-content: space-evenly;
+  list-style-type: none;
+}
+.features .features-list {
+  margin: 0;
+  padding: 0;
+}
+.features .features-list li {
+  list-style-type: none;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: white;
+  color: #730200;
+  opacity: 0.9;
+  border-radius: 7px;
 }
 .team .team-member {
   margin-top: 20px;

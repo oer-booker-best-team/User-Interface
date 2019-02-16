@@ -8,7 +8,7 @@ html {
 h2 {
     font-size: 2.5rem;
     color: white;
-    .text-shadow();
+    .text-shadow-black();
 }
 
 h3 {
@@ -79,15 +79,36 @@ nav {
     }
 }
 
-.main {
+body {
     margin: 0 auto;
     width: 98%;
    
 }
 
+.about {
+    background-color: @white;
+    opacity: .9;
+    padding: 10px;
+    color: @lonestar;
+    border-radius: 7px;
+}
+
 .features{
-    display: flex;
-    justify-content: space-evenly;
+    list-style-type: none;
+    .features-list {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: white;
+            color: @lonestar;
+            opacity: .9;
+            border-radius: 7px;
+        }
+    }
 }
 
 .team {
