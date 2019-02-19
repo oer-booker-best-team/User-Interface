@@ -6523,6 +6523,13 @@ nav a:hover {
 .tabs {
   display: block;
 }
+@media (min-width: 1000px) {
+  .tabs {
+    width: 80%;
+    max-width: 999px;
+    margin: 0 auto;
+  }
+}
 .tabs .tabs-links {
   justify-content: center;
   font-size: 2rem;
