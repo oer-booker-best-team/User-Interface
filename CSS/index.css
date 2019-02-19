@@ -6458,7 +6458,10 @@ html {
   font-size: 62.5%;
   text-align: center;
 }
-/* FONT SIZES */
+body {
+  margin: 0 auto;
+  width: 98%;
+}
 h2 {
   font-size: 2.5rem;
   color: white;
@@ -6475,8 +6478,8 @@ ol {
 /* BACKGROUND IMAGE */
 .bg-img {
   background-image: url('../img/bookcase.jpg');
-  height: 100%;
   width: 100vw;
+  min-height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -6509,52 +6512,82 @@ nav a {
 }
 nav a:hover {
   cursor: pointer;
+  background-color: white;
+  color: #045D75;
 }
 @media (min-width: 1000px) {
   nav a {
     width: 20%;
   }
 }
+.tabs {
+  display: block;
+}
+.tabs .tabs-links {
+  justify-content: center;
+  font-size: 2rem;
+}
 @media (max-width: 550px) {
-  nav a:nth-child(2) {
+  .tabs .tabs-links {
     display: none;
   }
 }
 @media (min-width: 551px) {
-  nav a:nth-child(2) {
+  .tabs .tabs-links {
     display: none;
   }
 }
-body {
-  margin: 0 auto;
-  width: 98%;
+@media (min-width: 1000px) {
+  .tabs .tabs-links {
+    display: flex;
+  }
 }
-.about {
+.tabs .tabs-links .tabs-link {
+  margin-left: 35px;
+  padding: 20px;
+  background: white;
+}
+.tabs .tabs-links .tabs-link:hover {
+  cursor: pointer;
+  color: #045D75;
+}
+@media (min-width: 1000px) {
+  .about {
+    display: none;
+  }
+}
+.about .about-content {
   background-color: white;
   opacity: 0.9;
   padding: 10px;
   color: #730200;
   border-radius: 7px;
 }
-.features {
+@media (min-width: 1000px) {
+  .features {
+    display: none;
+  }
+}
+.features .features-content {
   list-style-type: none;
 }
 @media (min-width: 551px) {
-  .features {
-    display: flex;
+  .features .features-content {
     justify-content: space-around;
+    display: flex;
+    flex-direction: row;
   }
 }
-.features .features-list {
+.features .features-content .features-list {
   margin: 0;
   padding: 0;
 }
 @media (min-width: 551px) {
-  .features .features-list {
+  .features .features-content .features-list {
     width: 49%;
   }
 }
-.features .features-list li {
+.features .features-content .features-list li {
   list-style-type: none;
   padding: 10px;
   margin-top: 5px;
@@ -6563,28 +6596,34 @@ body {
   opacity: 0.9;
   border-radius: 7px;
 }
-@media (min-width: 551px) {
+@media (min-width: 1000px) {
   .team {
+    display: none;
+  }
+}
+@media (min-width: 551px) {
+  .team-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 }
-.team .team-member {
+.team-content .team-member {
   margin-top: 20px;
+  opacity: 0.9;
 }
 @media (min-width: 551px) {
-  .team .team-member {
+  .team-content .team-member {
     width: 49%;
   }
 }
-.team .team-member img {
+.team-content .team-member img {
   border-radius: 7px;
   width: 100%;
   height: 300px;
   margin: 0;
 }
-.team .team-member h3 {
+.team-content .team-member h3 {
   background-color: #730200;
   color: white;
   margin: 0;
@@ -6592,7 +6631,7 @@ body {
   border-radius: 7px;
   opacity: 0.9;
 }
-.team .team-member .team-icons {
+.team-content .team-member .team-icons {
   background-color: #730200;
   border-radius: 7px;
   margin: 0;
@@ -6600,9 +6639,13 @@ body {
   justify-content: space-evenly;
   opacity: 0.9;
 }
-.team .team-member .team-icons a {
+.team-content .team-member .team-icons a {
   color: white;
   font-size: 1.6rem;
+}
+.team-content .team-member .team-icons a:hover {
+  cursor: pointer;
+  color: #045D75;
 }
 footer {
   background-color: #045D75;
