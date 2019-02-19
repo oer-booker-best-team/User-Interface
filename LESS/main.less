@@ -1,0 +1,169 @@
+html {
+    font-family: @site-font;
+    font-size: 62.5%;
+    text-align: center;
+}
+
+/* FONT SIZES */
+h2 {
+    font-size: 2.5rem;
+    color: white;
+    .text-shadow-black();
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+p,
+ul,
+ol {
+    font-size: 1.6rem;
+}
+
+/* BACKGROUND IMAGE */
+.bg-img {
+      background-image: url('../img/bookcase.jpg');
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.75;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.7rem;
+    
+
+    @media @tablet {
+        flex-direction: row;
+    }
+
+    @media @desktop {
+        justify-content: flex-end;
+    }
+
+    a {
+        .links();
+        background-color: @mosque;
+        color: @white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+       
+        &:hover{
+            cursor: pointer;
+        }
+
+        @media @tablet {
+           
+        }
+
+        @media @desktop {
+            width: 20%;
+        }
+
+    }
+
+    a:nth-child(2) {
+        @media @mobile {
+            display: none;
+        }
+
+        @media @tablet {
+            display: none;
+        }
+    }
+}
+
+body {
+    margin: 0 auto;
+    width: 98%;
+   
+}
+
+.about {
+    background-color: @white;
+    opacity: .9;
+    padding: 10px;
+    color: @lonestar;
+    border-radius: 7px;
+}
+
+.features{
+    list-style-type: none;
+
+    @media @tablet {
+        display: flex;
+        justify-content: space-around;
+    }
+    .features-list {
+        margin: 0;
+        padding: 0;
+
+        @media @tablet {
+            width: 49%;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: white;
+            color: @lonestar;
+            opacity: .9;
+            border-radius: 7px;
+        }
+    }
+}
+
+.team {
+
+
+    .team-member {
+        margin-top: 20px;
+
+        img {
+            border-radius: 7px;
+            width: 100%;
+            height: 300px;
+            margin: 0;
+        }
+
+        h3 {
+            background-color: @lonestar;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            border-radius: 7px;
+            opacity: .9;
+        }
+
+        .team-icons {
+            background-color: @lonestar;
+            border-radius: 7px;
+            margin: 0; 
+            display: flex;
+            justify-content: space-evenly;
+            opacity: .9;
+            
+            a {
+                color: white;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: @mosque;
+    color: @white;
+    opacity: .9;
+    margin: 0;
+    padding: 12px;
+}
