@@ -6457,6 +6457,7 @@ html {
   font-family: Old Standard TT;
   font-size: 62.5%;
   text-align: center;
+  overflow-y: hidden;
 }
 body {
   margin: 0 auto;
