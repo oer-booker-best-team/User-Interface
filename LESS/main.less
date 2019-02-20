@@ -2,9 +2,15 @@ html {
     font-family: @site-font;
     font-size: 62.5%;
     text-align: center;
+  
 }
 
-/* FONT SIZES */
+body {
+    margin: 0 auto;
+    width: 98%;
+    position:relative;
+}
+
 h2 {
     font-size: 2.5rem;
     color: white;
@@ -24,7 +30,9 @@ ol {
 /* BACKGROUND IMAGE */
 .bg-img {
       background-image: url('../img/bookcase.jpg');
-      height: 100%;
+    //   height: 100%;
+      width: 100vw;
+      min-height: 100vh;
 
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
@@ -58,10 +66,8 @@ nav {
        
         &:hover{
             cursor: pointer;
-        }
-
-        @media @tablet {
-           
+            background-color: @white;
+            color: @mosque;
         }
 
         @media @desktop {
@@ -69,8 +75,20 @@ nav {
         }
 
     }
+}
 
-    a:nth-child(2) {
+.tabs {
+
+     display: block;
+    @media @desktop {
+        width: 80%;
+        max-width: 999px;
+        margin: 0 auto;
+    }
+
+    .tabs-links {
+        
+
         @media @mobile {
             display: none;
         }
@@ -78,55 +96,107 @@ nav {
         @media @tablet {
             display: none;
         }
-    }
-}
 
-body {
-    margin: 0 auto;
-    width: 98%;
-   
+        @media @desktop {
+            display: flex;
+        }
+        justify-content: center;
+        font-size: 2rem;
+
+        .tabs-link {
+            color: @mosque;
+            margin: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 7px;
+            opacity: .9;
+
+            &:hover {
+                cursor: pointer;
+                color: @white;
+                background: @mosque;
+            }
+        }
+    }
 }
 
 .about {
-    background-color: @white;
-    opacity: .9;
-    padding: 10px;
-    color: @lonestar;
-    border-radius: 7px;
+    @media @desktop {
+        display: none;
+    }
+
+    .about-content {
+        background-color: @white;
+        opacity: .9;
+        padding: 10px;
+        color: @lonestar;
+        border-radius: 7px;
+    }
+
 }
 
-.features{
-    list-style-type: none;
-
-    @media @tablet {
-        display: flex;
-        justify-content: space-around;
+.features {
+    @media @desktop {
+        display: none;
+        
     }
-    .features-list {
-        margin: 0;
-        padding: 0;
+    
+    .features-content {
+        list-style-type: none;
+            
+             @media @tablet {
+                 justify-content: space-around;
+                 display: flex;
+                 flex-direction: row;
+             }
+    
+        .features-list {
+            margin: 0;
+            padding: 0;
 
-        @media @tablet {
-            width: 49%;
-        }
+            @media @tablet {
+                width: 49%;
+    
+            }
 
-        li {
-            list-style-type: none;
-            padding: 10px;
-            margin-top: 5px;
-            background-color: white;
-            color: @lonestar;
-            opacity: .9;
-            border-radius: 7px;
+            li {
+                list-style-type: none;
+                padding: 10px;
+                margin-top: 5px;
+                background-color: white;
+                color: @lonestar;
+                opacity: .9;
+                border-radius: 7px;
+            }
         }
     }
 }
 
 .team {
+    @media @desktop {
+        display: none;
+        height:100vh;
+    }
 
+    
+}
+
+.team-content {
+@media @tablet {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
     .team-member {
         margin-top: 20px;
+        
+
+        @media @tablet {
+           width: 49%;
+
+        }
+        opacity: .9;
 
         img {
             border-radius: 7px;
@@ -155,6 +225,11 @@ body {
             a {
                 color: white;
                 font-size: 1.6rem;
+
+                 &:hover {
+                     cursor: pointer;
+                     color: @mosque;
+                 }
             }
         }
     }
@@ -166,4 +241,16 @@ footer {
     opacity: .9;
     margin: 0;
     padding: 12px;
+
+    @media @desktop {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
 }
+
+  .tabs-item-selected {
+      display: block;
+  }

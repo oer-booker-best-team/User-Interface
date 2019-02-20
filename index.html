@@ -7,16 +7,30 @@
     <title>Document</title>
 
     <link href="css/index.css" rel="stylesheet">
+    <script src="./components/Tabs.js" async></script>
 </head>
 <body>
-    <div class="bg-img">
+    <section class="bg-img">
+        <!-- NAVIGATION -->
         <nav>
-                <a class="nav-link" href="#">LOGIN</a>
-                <a class="nav-link" href="#">ABOUT TEAM</a>
+<a class="nav-link" target="_blank" href="https://open-source-edu-books.netlify.com">LOGIN </a>
         </nav>
-            <h2>ABOUT</h2>
-           
-            <div class="about"> 
+
+      
+<div class="tabs">
+
+    <div class="tabs-links">
+        <div class="tabs-link tabs-link-selected" data-tab="1" tabindex="0">ABOUT</div>
+        <div class="tabs-link" data-tab="2" tabindex="0">FEATURES</div>
+        <div class="tabs-link" data-tab="3" tabindex="0">TEAM</div>
+    </div>
+
+    <div class="tabs-items">
+
+        <!-- ABOUT -->
+            <section class="about tabs-item tabs-item-selected" data-tab="1">
+            <h2 class="tabs-item-title">ABOUT</h2>
+            <div class="tabs-item-description about-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id commodo ex, id tristique nisi.
                     Orci varius
                     natoque
@@ -29,8 +43,12 @@
                     orci non risus bibendum varius. Aenean tristique tempor ligula, eget molestie augue mattis sit amet. Nulla facilisi.
                 </p>
             </div>
-            <h2>FEATURES</h2>
-            <div class="features">
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features tabs-item" data-tab="2">
+            <h2 class="tabs-item-title">FEATURES</h2>
+            <div class="tabs-item-description features-content">
                 <ul class="features-list">
                     <li>Feature 1</li>
                     <li>Feature 2</li>
@@ -46,28 +64,32 @@
                     <li>Feature 10</li>
                 </ul>
             </div>
-            <div class="team">
-                <h2>TEAM</h2>
-                <div class="team-member" class="ui">
+        </section>
+
+        <!-- TEAM -->
+            <section class="team tabs-item" class="" data-tab="3">
+            <h2 class="tabs-item-title">TEAM</h2>
+            <div class="team-content tabs-item-description">
+                <div class="team-member">
                     <h3>UI Developer</h3>
                     <img src="https://via.placeholder.com/300" alt="placeholder">
                     <div class="team-icons">
-                        <a href="#"><i class="fab fa-github-square fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                        <a href="https://github.com/Poly-G" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/poly-goveia/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href="https://twitter.com/_PolyG" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
                     </div>
 
                 </div>
-                <div class="team-member" class="front-end">
+                <div class="team-member">
                     <h3>Front End Architect</h3>
                     <img src="https://via.placeholder.com/300" alt="placeholder">
                     <div class="team-icons">
-                        <a href="#"><i class="fab fa-github-square fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                        <a href="https://github.com/leila100  " target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/leila-berrouayel/  " target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href="https://twitter.com/nb_leila  " target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
                     </div>
                 </div>
-                <div class="team-member" class="back-end">
+                <!-- <div class="team-member">
                     <h3>Back End Architect</h3>
                     <img src="https://via.placeholder.com/300" alt="placeholder">
                     <div class="team-icons">
@@ -75,23 +97,25 @@
                         <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
                         <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
                     </div>
-                
-                </div>
-                <div class="team-member" class="scrum">
+                </div> -->
+                <div class="team-member" >
                     <h3>Scrum Master</h3>
                     <img src="https://via.placeholder.com/300" alt="placeholder">
                     <div class="team-icons">
-                        <a href="#"><i class="fab fa-github-square fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+                        <a href="https://github.com/johnoro" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/john-o-rourke/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a> -->
                     </div>
-                
                 </div>
-
             </div>
+        </section> <!-- TEAM CLOSING TAG -->
+        </div> <!-- TAB ITEMS CLOSING TAG-->
+        </div>
+
+        <!-- FOOTER -->
         <footer>
             <p>&copy; copyright OER Bookr 2019</p>
         </footer>
-        </div>
+    </section> <!-- BACKGROUND IMAGE CLOSING TAG -->
 </body>
 </html>
