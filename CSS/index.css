@@ -6551,13 +6551,17 @@ nav a:hover {
   }
 }
 .tabs .tabs-links .tabs-link {
-  margin-left: 35px;
+  color: #045D75;
+  margin: 15px;
   padding: 20px;
   background: white;
+  border-radius: 7px;
+  opacity: 0.9;
 }
 .tabs .tabs-links .tabs-link:hover {
   cursor: pointer;
-  color: #045D75;
+  color: white;
+  background: #045D75;
 }
 @media (min-width: 1000px) {
   .about {
