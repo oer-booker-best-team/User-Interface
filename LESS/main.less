@@ -8,6 +8,7 @@ html {
 body {
     margin: 0 auto;
     width: 98%;
+    position:relative;
 }
 
 h2 {
@@ -173,6 +174,7 @@ nav {
 .team {
     @media @desktop {
         display: none;
+        height:100vh;
     }
 
     
@@ -183,11 +185,11 @@ nav {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
     .team-member {
         margin-top: 20px;
+        
 
         @media @tablet {
            width: 49%;
@@ -238,6 +240,14 @@ footer {
     opacity: .9;
     margin: 0;
     padding: 12px;
+
+    @media @desktop {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
 }
 
   .tabs-item-selected {

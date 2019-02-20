@@ -6461,6 +6461,7 @@ html {
 body {
   margin: 0 auto;
   width: 98%;
+  position: relative;
 }
 h2 {
   font-size: 2.5rem;
@@ -6606,6 +6607,7 @@ nav a:hover {
 @media (min-width: 1000px) {
   .team {
     display: none;
+    height: 100vh;
   }
 }
 @media (min-width: 551px) {
@@ -6660,6 +6662,14 @@ footer {
   opacity: 0.9;
   margin: 0;
   padding: 12px;
+}
+@media (min-width: 1000px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
 .tabs-item-selected {
   display: block;
