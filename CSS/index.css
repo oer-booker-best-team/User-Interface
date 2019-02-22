@@ -6622,6 +6622,11 @@ nav a:hover {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 1000px) {
+  .team-content {
+    flex-wrap: nowrap;
+  }
+}
 .team-content .team-member {
   margin-top: 20px;
   max-width: 320px;
