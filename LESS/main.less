@@ -2,7 +2,7 @@ html {
     font-family: @site-font;
     font-size: 62.5%;
     text-align: center;
-  
+    overflow-y: scroll;
 }
 
 body {
@@ -30,7 +30,6 @@ ol {
 /* BACKGROUND IMAGE */
 .bg-img {
       background-image: url('../img/bookcase.jpg');
-    //   height: 100%;
       width: 100vw;
       min-height: 100vh;
 
@@ -182,25 +181,40 @@ nav {
 }
 
 .team-content {
-@media @tablet {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
+     display: flex;
+    @media @mobile {
+        flex-flow: column;
+    }
+    
+    @media @tablet {
+       
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    @media @desktop {
+        flex-wrap: nowrap;
+    }
+   
     .team-member {
         margin-top: 20px;
+         max-width: 320px;
+         width: 320px;
+         min-width: 320px;
         
+         @media @mobile {
+            align-self: center;
+         }
 
         @media @tablet {
            width: 49%;
 
         }
-        opacity: .9;
+
 
         img {
             border-radius: 7px;
             width: 100%;
+            
             height: 300px;
             margin: 0;
         }

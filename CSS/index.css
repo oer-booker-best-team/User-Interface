@@ -6457,6 +6457,7 @@ html {
   font-family: Old Standard TT;
   font-size: 62.5%;
   text-align: center;
+  overflow-y: scroll;
 }
 body {
   margin: 0 auto;
@@ -6614,16 +6615,35 @@ nav a:hover {
     height: 100vh;
   }
 }
+.team-content {
+  display: flex;
+}
+@media (max-width: 550px) {
+  .team-content {
+    flex-flow: column;
+  }
+}
 @media (min-width: 551px) {
   .team-content {
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 }
+@media (min-width: 1000px) {
+  .team-content {
+    flex-wrap: nowrap;
+  }
+}
 .team-content .team-member {
   margin-top: 20px;
-  opacity: 0.9;
+  max-width: 320px;
+  width: 320px;
+  min-width: 320px;
+}
+@media (max-width: 550px) {
+  .team-content .team-member {
+    align-self: center;
+  }
 }
 @media (min-width: 551px) {
   .team-content .team-member {
