@@ -6458,10 +6458,11 @@ html {
   font-size: 62.5%;
   text-align: center;
   overflow-y: scroll;
+  width: 100vw;
 }
 body {
   margin: 0 auto;
-  width: 98%;
+  width: 100%;
   position: relative;
 }
 h2 {
@@ -6480,7 +6481,7 @@ ol {
 /* BACKGROUND IMAGE */
 .bg-img {
   background-image: url('../img/bookcase.jpg');
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
