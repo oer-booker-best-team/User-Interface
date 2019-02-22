@@ -181,25 +181,30 @@ nav {
 }
 
 .team-content {
-@media @tablet {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
+    
+    @media @tablet {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+   
     .team-member {
         margin-top: 20px;
-        
+         max-width: 320px;
+         width: 320px;
+         min-width: 320px;
+
 
         @media @tablet {
            width: 49%;
 
         }
-        opacity: .9;
+
 
         img {
             border-radius: 7px;
             width: 100%;
+            
             height: 300px;
             margin: 0;
         }

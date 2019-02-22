@@ -6624,7 +6624,9 @@ nav a:hover {
 }
 .team-content .team-member {
   margin-top: 20px;
-  opacity: 0.9;
+  max-width: 320px;
+  width: 320px;
+  min-width: 320px;
 }
 @media (min-width: 551px) {
   .team-content .team-member {
