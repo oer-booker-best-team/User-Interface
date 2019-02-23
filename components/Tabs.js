@@ -21,6 +21,7 @@ class TabLink {
              if (e.keyCode === 13) {
             this.select()
              }
+
         });
     };
 
