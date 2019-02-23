@@ -9,7 +9,7 @@ html {
 body {
     margin: 0 auto;
     width: 100%;
-    position:relative;
+    position: relative;
 }
 
 h2 {
@@ -30,23 +30,23 @@ ol {
 
 /* BACKGROUND IMAGE */
 .bg-img {
-      background-image: url('../img/bookcase.jpg');
-      width: 100%;
-      min-height: 100vh;
+    background-image: url('../img/bookcase.jpg');
+    width: 100%;
+    min-height: 100vh;
 
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0.75;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
 }
 
 nav {
     display: flex;
     flex-direction: column;
     font-size: 2.7rem;
-    
+
 
     @media @tablet {
         flex-direction: row;
@@ -63,8 +63,8 @@ nav {
         border-radius: 10px;
         padding: 20px;
         width: 100%;
-       
-        &:hover{
+
+        &:hover {
             cursor: pointer;
             background-color: @white;
             color: @mosque;
@@ -79,7 +79,8 @@ nav {
 
 .tabs {
 
-     display: block;
+    display: block;
+
     @media @desktop {
         width: 80%;
         max-width: 999px;
@@ -87,7 +88,7 @@ nav {
     }
 
     .tabs-links {
-        
+
 
         @media @mobile {
             display: none;
@@ -100,6 +101,7 @@ nav {
         @media @desktop {
             display: flex;
         }
+
         justify-content: center;
         font-size: 2rem;
 
@@ -138,25 +140,25 @@ nav {
 .features {
     @media @desktop {
         display: none;
-        
+
     }
-    
+
     .features-content {
         list-style-type: none;
-            
-             @media @tablet {
-                 justify-content: space-around;
-                 display: flex;
-                 flex-direction: row;
-             }
-    
+
+        @media @tablet {
+            justify-content: space-around;
+            display: flex;
+            flex-direction: row;
+        }
+
         .features-list {
             margin: 0;
             padding: 0;
 
             @media @tablet {
                 width: 49%;
-    
+
             }
 
             li {
@@ -175,39 +177,41 @@ nav {
 .team {
     @media @desktop {
         display: none;
-        height:100vh;
+        height: 100vh;
     }
 
-    
+
 }
 
 .team-content {
-     display: flex;
+    display: flex;
+
     @media @mobile {
         flex-flow: column;
     }
-    
+
     @media @tablet {
-       
+
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
     @media @desktop {
         flex-wrap: nowrap;
     }
-   
+
     .team-member {
         margin-top: 20px;
-         max-width: 320px;
-         width: 320px;
-         min-width: 320px;
-        
-         @media @mobile {
+        max-width: 320px;
+        width: 320px;
+        min-width: 320px;
+
+        @media @mobile {
             align-self: center;
-         }
+        }
 
         @media @tablet {
-           width: 49%;
+            width: 49%;
 
         }
 
@@ -215,7 +219,7 @@ nav {
         img {
             border-radius: 7px;
             width: 100%;
-            
+
             height: 300px;
             margin: 0;
         }
@@ -231,30 +235,30 @@ nav {
 
         h4 {
             font-weight: bold;
-             background-color: white;
-             color: @lonestar;
-             margin: 0;
-             padding: 10px;
-             border-radius: 7px;
-             font-size: 1.8rem;
+            background-color: white;
+            color: @lonestar;
+            margin: 0;
+            padding: 10px;
+            border-radius: 7px;
+            font-size: 1.8rem;
         }
 
         .team-icons {
             background-color: @lonestar;
             border-radius: 7px;
-            margin: 0; 
+            margin: 0;
             display: flex;
             justify-content: space-evenly;
             opacity: .9;
-            
+
             a {
                 color: white;
                 font-size: 1.6rem;
 
-                 &:hover {
-                     cursor: pointer;
-                     color: @mosque;
-                 }
+                &:hover {
+                    cursor: pointer;
+                    color: @mosque;
+                }
             }
         }
     }
@@ -273,9 +277,9 @@ footer {
         bottom: 0;
         width: 100%;
     }
-    
+
 }
 
-  .tabs-item-selected {
-      display: block;
-  }
+.tabs-item-selected {
+    display: block;
+}
